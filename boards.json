@@ -8,9 +8,9 @@
       {
         "name": "v1.0",
         "assets": {
-          "gerbers": "https://raw.githubusercontent.com/Keyllective/pcbs/main/key-570b811c/v1.0/key-570b811c-gerbers-v1.0.zip",
-          "bom": "https://raw.githubusercontent.com/Keyllective/pcbs/main/key-570b811c/v1.0/key-570b811c-bom-v1.0.csv",
-          "cpl": "https://raw.githubusercontent.com/Keyllective/pcbs/main/key-570b811c/v1.0/key-570b811c-cpl-v1.0.csv"
+          "gerbers": "https://cdn.jsdelivr.net/gh/keyllective/pcbs/key-570b811c/v1.0/key-570b811c-gerbers-v1.0.zip",
+          "bom": "https://cdn.jsdelivr.net/gh/keyllective/pcbs/key-570b811c/v1.0/key-570b811c-bom-v1.0.csv",
+          "cpl": "https://cdn.jsdelivr.net/gh/keyllective/pcbs/key-570b811c/v1.0/key-570b811c-cpl-v1.0.csv"
         }
       }
     ]
@@ -24,9 +24,9 @@
       {
         "name": "v1.0",
         "assets": {
-          "gerbers": "https://raw.githubusercontent.com/Keyllective/pcbs/main/key-cdbabedc/v1.0/key-cdbabedc-gerbers-v1.0.zip",
-          "bom": "https://raw.githubusercontent.com/Keyllective/pcbs/main/key-cdbabedc/v1.0/key-cdbabedc-bom-v1.0.csv",
-          "cpl": "https://raw.githubusercontent.com/Keyllective/pcbs/main/key-cdbabedc/v1.0/key-cdbabedc-cpl-v1.0.csv"
+          "gerbers": "https://cdn.jsdelivr.net/gh/keyllective/pcbs/key-cdbabedc/v1.0/key-cdbabedc-gerbers-v1.0.zip",
+          "bom": "https://cdn.jsdelivr.net/gh/keyllective/pcbs/key-cdbabedc/v1.0/key-cdbabedc-bom-v1.0.csv",
+          "cpl": "https://cdn.jsdelivr.net/gh/keyllective/pcbs/key-cdbabedc/v1.0/key-cdbabedc-cpl-v1.0.csv"
         }
       }
     ]
