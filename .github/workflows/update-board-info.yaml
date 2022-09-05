@@ -1,0 +1,28 @@
+# Adapted from
+# https://github.com/actions/checkout/blob/25a956c84d5dd820d28caab9f86b8d183aeeff3d/README.md#push-a-commit-using-the-built-in-token
+# https://stackoverflow.com/a/8123841/822292
+name: Generate boards.json from repository
+on:
+  push:
+    branches:
+      - main
+jobs:
+  my-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+
+      - run: node .bin/generate-boards.js
+
+      - name: Commit new and updated files back to this repository
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add .
+          git diff-index --quiet HEAD || git commit -m "[skip ci] Save result of action"
+          git push
