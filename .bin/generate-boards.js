@@ -1,7 +1,7 @@
 const fs = require('fs/promises')
 const path = require('path')
 
-const ASSET_ROOT = `https://raw.githubusercontent.com/Keyllective/pcbs/main`
+const ASSET_ROOT = `https://cdn.jsdelivr.net/gh/keyllective/pcbs`
 
 const main = async () => {
   const files = await fs.readdir(path.join(__dirname, '..'))
