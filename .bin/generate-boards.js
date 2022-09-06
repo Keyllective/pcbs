@@ -16,7 +16,14 @@ const main = async () => {
         info = JSON.parse(infoStr)
         info.name = board
 
-        const boardDir = await fs.readdir(path.join(__dirname, '..', board), {withFileTypes:true})
+        const boardDir = await fs.readdir(path.join(__dirname, '..', board), { withFileTypes: true })
+
+        const imageFile = boardDir.find(file => file.isFile() && file.name.match(new RegExp(`${info.name}.png`)))
+
+        if (imageFile != null) {
+          info.image = `${ASSET_ROOT}/${board}/${board}.png`
+        }
+
         const tagDirs = boardDir
           .filter(dir => dir.isDirectory())
           .map(tag => tag.name)
